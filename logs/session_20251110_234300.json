@@ -1,0 +1,158 @@
+{
+  "session_id": "session_20251110_234147",
+  "user_query": "Explain about artificial intelligence.",
+  "execution_time": 72.54210829734802,
+  "iterations": 1,
+  "plan": {
+    "query": "Explain about artificial intelligence.",
+    "reasoning": "User wants to research a topic, so I'll gather information from multiple sources.",
+    "pipeline": [
+      {
+        "tool": "wikipedia_search",
+        "purpose": "Get foundational knowledge about the topic",
+        "input": "Explain about artificial intelligence."
+      },
+      {
+        "tool": "news_fetcher",
+        "purpose": "Find recent developments and news",
+        "input": "Explain about artificial intelligence."
+      },
+      {
+        "tool": "arxiv_summarizer",
+        "purpose": "Get academic research and papers",
+        "input": "Explain about artificial intelligence."
+      }
+    ],
+    "final_output": "Comprehensive research summary with sources",
+    "created_at": "2025-11-10T23:42:09.177131",
+    "planner_version": "1.0.0-fallback",
+    "available_tools": 11,
+    "estimated_steps": 3,
+    "llm_generated": false
+  },
+  "plan_history": [
+    {
+      "iteration": 0,
+      "plan": {
+        "query": "Explain about artificial intelligence.",
+        "reasoning": "User wants to research a topic, so I'll gather information from multiple sources.",
+        "pipeline": [
+          {
+            "tool": "wikipedia_search",
+            "purpose": "Get foundational knowledge about the topic",
+            "input": "Explain about artificial intelligence."
+          },
+          {
+            "tool": "news_fetcher",
+            "purpose": "Find recent developments and news",
+            "input": "Explain about artificial intelligence."
+          },
+          {
+            "tool": "arxiv_summarizer",
+            "purpose": "Get academic research and papers",
+            "input": "Explain about artificial intelligence."
+          }
+        ],
+        "final_output": "Comprehensive research summary with sources",
+        "created_at": "2025-11-10T23:42:09.177131",
+        "planner_version": "1.0.0-fallback",
+        "available_tools": 11,
+        "estimated_steps": 3,
+        "llm_generated": false
+      },
+      "score": 0
+    },
+    {
+      "iteration": 1,
+      "plan": {
+        "query": "Explain about artificial intelligence.",
+        "reasoning": "User wants to research a topic, so I'll gather information from multiple sources.",
+        "pipeline": [
+          {
+            "tool": "wikipedia_search",
+            "purpose": "Get foundational knowledge about the topic",
+            "input": "Explain about artificial intelligence."
+          },
+          {
+            "tool": "news_fetcher",
+            "purpose": "Find recent developments and news",
+            "input": "Explain about artificial intelligence."
+          },
+          {
+            "tool": "arxiv_summarizer",
+            "purpose": "Get academic research and papers",
+            "input": "Explain about artificial intelligence."
+          }
+        ],
+        "final_output": "Comprehensive research summary with sources",
+        "created_at": "2025-11-10T23:42:09.177131",
+        "planner_version": "1.0.0-fallback",
+        "available_tools": 11,
+        "estimated_steps": 3,
+        "llm_generated": false
+      },
+      "score": 100,
+      "approved": true
+    }
+  ],
+  "plan_explanation": "\ud83e\udd16 **Planner Analysis & Task Pipeline**\n\n**Query:** Explain about artificial intelligence.\n\n**Reasoning:** User wants to research a topic, so I'll gather information from multiple sources.\n\n**\ud83d\udccb Planned Task Pipeline:**\n1. **wikipedia_search**\n   - Purpose: Get foundational knowledge about the topic\n   - Input: Explain about artificial intelligence.\n\n2. **news_fetcher**\n   - Purpose: Find recent developments and news\n   - Input: Explain about artificial intelligence.\n\n3. **arxiv_summarizer**\n   - Purpose: Get academic research and papers\n   - Input: Explain about artificial intelligence.\n\n**\ud83c\udfaf Expected Output:** Comprehensive research summary with sources\n**\ud83d\udcca Plan Metadata:** 3 steps, 11 tools available",
+  "verification": {
+    "plan_id": "plan_20251110_234229",
+    "verified_at": "2025-11-10T23:42:29.356042",
+    "overall_approval": true,
+    "issues": [],
+    "suggestions": [],
+    "improvements": [],
+    "score": 100,
+    "verification_method": "rule_based"
+  },
+  "verifier_feedback": "\ud83d\udd0d **Verifier Feedback & Plan Validation**\n\n\u2705 **Plan Approved** (Score: 100/100)\n\n**\ud83d\udcca Verification Summary:**\n\u2022 Plan ID: plan_20251110_234229\n\u2022 Verified at: 2025-11-10T23:42:29.356042\n\u2022 Tools checked: 11\n\u2022 Rules applied: 5",
+  "execution_results": [
+    {
+      "step": 1,
+      "tool": "wikipedia_search",
+      "status": "success",
+      "execution_time": 6.371313571929932,
+      "output": "## explain artificial intelligence\n\n\"explain artificial intelligence\" is a topic in computer science and technology. The Wikipedia API is currently unavailable, but this represents knowledge about the subject.\n\n**Source:** [https://en.wikipedia.org/wiki/explain_artificial_intelligence](https://en.wikipedia.org/wiki/explain_artificial_intelligence)\n\n*Note: This is a fallback summary as the Wikipedia API could not be accessed.*",
+      "input": "Explain about artificial intelligence.",
+      "purpose": "Get foundational knowledge about the topic"
+    },
+    {
+      "step": 2,
+      "tool": "news_fetcher",
+      "status": "success",
+      "execution_time": 1.9352378845214844,
+      "output": {
+        "status": "success",
+        "data": [],
+        "message": "No news articles found for keyword: Explain about artificial intelligence."
+      },
+      "input": "Explain about artificial intelligence.",
+      "purpose": "Find recent developments and news"
+    },
+    {
+      "step": 3,
+      "tool": "arxiv_summarizer",
+      "status": "success",
+      "execution_time": 1.0550508499145508,
+      "output": "Found 5 papers related to 'Explain about artificial intelligence.':\n\n1. **Quantization of Games: Towards Quantum Artificial Intelligence**\n   Authors: Katarzyna Miakisz, Edward W. Piotrowski, Jan Sladkowski\n   Published: 2004-12-30\n   ArXiv ID: quant-ph/0412215\n   Summary: On grounds of the discussed material, we reason about possible future development of quantum game theory and its impact on information processing and the emerging information society. The idea of quan...\n\n2. **Qualitative Probabilistic Networks for Planning Under Uncertainty**\n   Authors: Michael P. Wellman\n   Published: 2013-03-27\n   ArXiv ID: 1304.3115\n   Summary: Bayesian networks provide a probabilistic semantics for qualitative assertions about likelihood. A qualitative reasoner based on an algebra over these assertions can derive further conclusions about t...\n\n3. **A Review on Explainable Artificial Intelligence for Healthcare: Why,   How, and When?**\n   Authors: Subrato Bharati, M. Rubaiyat Hossain Mondal, Prajoy Podder\n   Published: 2023-04-10\n   ArXiv ID: 2304.04780\n   Summary: Artificial intelligence (AI) models are increasingly finding applications in the field of medicine. Concerns have been raised about the explainability of the decisions that are made by these AI models...\n\n4. **Notion of Explainable Artificial Intelligence -- An Empirical   Investigation from A Users Perspective**\n   Authors: AKM Bahalul Haque, A. K. M. Najmul Islam, Patrick Mikalef\n   Published: 2023-11-01\n   ArXiv ID: 2311.02102\n   Summary: The growing attention to artificial intelligence-based applications has led to research interest in explainability issues. This emerging research attention on explainable AI (XAI) advocates the need t...\n\n5. **An Argumentation-based Approach for Explaining Goal Selection in   Intelligent Agents**\n   Authors: Mariela Morveli-Espinoza, Cesar Augusto Tacla, Henrique Jasinski\n   Published: 2020-09-14\n   ArXiv ID: 2009.06131\n   Summary: During the first step of practical reasoning, i.e. deliberation or goals selection, an intelligent agent generates a set of pursuable goals and then selects which of them he commits to achieve. Explai...\n\n",
+      "input": "Explain about artificial intelligence.",
+      "purpose": "Get academic research and papers"
+    }
+  ],
+  "final_verification": {
+    "plan_id": "plan_20251110_234300",
+    "verified_at": "2025-11-10T23:43:00.457932",
+    "overall_approval": true,
+    "issues": [],
+    "suggestions": [],
+    "improvements": [],
+    "score": 100,
+    "verification_method": "rule_based"
+  },
+  "status": "completed",
+  "adversarial_loop_active": true,
+  "final_plan_score": 100,
+  "plan_approved": true,
+  "self_correction_used": false
+}

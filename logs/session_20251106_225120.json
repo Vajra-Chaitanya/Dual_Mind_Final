@@ -1,0 +1,184 @@
+{
+  "session_id": "session_20251106_225006",
+  "user_query": "Research the latest developments in quantum computing and create a comprehensive overview.",
+  "execution_time": 74.01484394073486,
+  "iterations": 1,
+  "plan": {
+    "query": "Research the latest developments in quantum computing and create a comprehensive overview.",
+    "reasoning": "User wants to research a topic, so I'll gather information from multiple sources.",
+    "pipeline": [
+      {
+        "tool": "wikipedia_search",
+        "purpose": "Get foundational knowledge about the topic",
+        "input": "Research the latest developments in quantum computing and create a comprehensive overview."
+      },
+      {
+        "tool": "news_fetcher",
+        "purpose": "Find recent developments and news",
+        "input": "Research the latest developments in quantum computing and create a comprehensive overview."
+      },
+      {
+        "tool": "arxiv_summarizer",
+        "purpose": "Get academic research and papers",
+        "input": "Research the latest developments in quantum computing and create a comprehensive overview."
+      }
+    ],
+    "final_output": "Comprehensive research summary with sources",
+    "created_at": "2025-11-06T22:50:27.268029",
+    "planner_version": "1.0.0-fallback",
+    "available_tools": 11,
+    "estimated_steps": 3,
+    "llm_generated": false
+  },
+  "plan_history": [
+    {
+      "iteration": 0,
+      "plan": {
+        "query": "Research the latest developments in quantum computing and create a comprehensive overview.",
+        "reasoning": "User wants to research a topic, so I'll gather information from multiple sources.",
+        "pipeline": [
+          {
+            "tool": "wikipedia_search",
+            "purpose": "Get foundational knowledge about the topic",
+            "input": "Research the latest developments in quantum computing and create a comprehensive overview."
+          },
+          {
+            "tool": "news_fetcher",
+            "purpose": "Find recent developments and news",
+            "input": "Research the latest developments in quantum computing and create a comprehensive overview."
+          },
+          {
+            "tool": "arxiv_summarizer",
+            "purpose": "Get academic research and papers",
+            "input": "Research the latest developments in quantum computing and create a comprehensive overview."
+          }
+        ],
+        "final_output": "Comprehensive research summary with sources",
+        "created_at": "2025-11-06T22:50:27.268029",
+        "planner_version": "1.0.0-fallback",
+        "available_tools": 11,
+        "estimated_steps": 3,
+        "llm_generated": false
+      },
+      "score": 0
+    },
+    {
+      "iteration": 1,
+      "plan": {
+        "query": "Research the latest developments in quantum computing and create a comprehensive overview.",
+        "reasoning": "User wants to research a topic, so I'll gather information from multiple sources.",
+        "pipeline": [
+          {
+            "tool": "wikipedia_search",
+            "purpose": "Get foundational knowledge about the topic",
+            "input": "Research the latest developments in quantum computing and create a comprehensive overview."
+          },
+          {
+            "tool": "news_fetcher",
+            "purpose": "Find recent developments and news",
+            "input": "Research the latest developments in quantum computing and create a comprehensive overview."
+          },
+          {
+            "tool": "arxiv_summarizer",
+            "purpose": "Get academic research and papers",
+            "input": "Research the latest developments in quantum computing and create a comprehensive overview."
+          }
+        ],
+        "final_output": "Comprehensive research summary with sources",
+        "created_at": "2025-11-06T22:50:27.268029",
+        "planner_version": "1.0.0-fallback",
+        "available_tools": 11,
+        "estimated_steps": 3,
+        "llm_generated": false
+      },
+      "score": 100,
+      "approved": true
+    }
+  ],
+  "plan_explanation": "\ud83e\udd16 **Planner Analysis & Task Pipeline**\n\n**Query:** Research the latest developments in quantum computing and create a comprehensive overview.\n\n**Reasoning:** User wants to research a topic, so I'll gather information from multiple sources.\n\n**\ud83d\udccb Planned Task Pipeline:**\n1. **wikipedia_search**\n   - Purpose: Get foundational knowledge about the topic\n   - Input: Research the latest developments in quantum computing and create a comprehensive overview.\n\n2. **news_fetcher**\n   - Purpose: Find recent developments and news\n   - Input: Research the latest developments in quantum computing and create a comprehensive overview.\n\n3. **arxiv_summarizer**\n   - Purpose: Get academic research and papers\n   - Input: Research the latest developments in quantum computing and create a comprehensive overview.\n\n**\ud83c\udfaf Expected Output:** Comprehensive research summary with sources\n**\ud83d\udcca Plan Metadata:** 3 steps, 11 tools available",
+  "verification": {
+    "plan_id": "plan_20251106_225047",
+    "verified_at": "2025-11-06T22:50:47.474902",
+    "overall_approval": true,
+    "issues": [],
+    "suggestions": [],
+    "improvements": [],
+    "score": 100,
+    "verification_method": "rule_based"
+  },
+  "verifier_feedback": "\ud83d\udd0d **Verifier Feedback & Plan Validation**\n\n\u2705 **Plan Approved** (Score: 100/100)\n\n**\ud83d\udcca Verification Summary:**\n\u2022 Plan ID: plan_20251106_225047\n\u2022 Verified at: 2025-11-06T22:50:47.474902\n\u2022 Tools checked: 11\n\u2022 Rules applied: 5",
+  "execution_results": [
+    {
+      "step": 1,
+      "tool": "wikipedia_search",
+      "status": "success",
+      "execution_time": 9.461395978927612,
+      "output": "## developments in quantum computing a overview\n\n\"developments in quantum computing a overview\" is a topic in computer science and technology. The Wikipedia API is currently unavailable, but this represents knowledge about the subject.\n\n**Source:** [https://en.wikipedia.org/wiki/developments_in_quantum_computing_a_overview](https://en.wikipedia.org/wiki/developments_in_quantum_computing_a_overview)\n\n*Note: This is a fallback summary as the Wikipedia API could not be accessed.*",
+      "input": "Research the latest developments in quantum computing and create a comprehensive overview.",
+      "purpose": "Get foundational knowledge about the topic"
+    },
+    {
+      "step": 2,
+      "tool": "news_fetcher",
+      "status": "success",
+      "execution_time": 2.7967710494995117,
+      "output": {
+        "status": "success",
+        "data": [
+          {
+            "title": "AI Breakthrough in Climate Research Announced",
+            "source": "TechCrunch",
+            "published_at": "2025-11-06T22:50:56.943363",
+            "description": "Scientists develop new machine learning model to predict climate patterns with unprecedented accuracy.",
+            "url": "https://example.com/ai-climate-news",
+            "content": "Scientists develop new machine learning model to predict climate patterns with unprecedented accuracy."
+          },
+          {
+            "title": "Breakthrough in Quantum Computing Research",
+            "source": "Nature",
+            "published_at": "2025-11-06T22:50:56.944403",
+            "description": "Researchers achieve quantum supremacy milestone with new experimental processor.",
+            "url": "https://example.com/quantum-news",
+            "content": "Researchers achieve quantum supremacy milestone with new experimental processor."
+          },
+          {
+            "title": "Machine Learning Transforms Healthcare Industry",
+            "source": "MIT Technology Review",
+            "published_at": "2025-11-06T22:50:56.944403",
+            "description": "AI-powered diagnostic tools show 95% accuracy in early disease detection.",
+            "url": "https://example.com/ml-healthcare-news",
+            "content": "AI-powered diagnostic tools show 95% accuracy in early disease detection."
+          }
+        ],
+        "count": 3,
+        "query": "Research the latest developments in quantum computing and create a comprehensive overview."
+      },
+      "input": "Research the latest developments in quantum computing and create a comprehensive overview.",
+      "purpose": "Find recent developments and news"
+    },
+    {
+      "step": 3,
+      "tool": "arxiv_summarizer",
+      "status": "success",
+      "execution_time": 2.329218626022339,
+      "output": "Found 5 papers related to 'Research the latest developments in quantum computing and create a comprehensive overview.':\n\n1. **A Review of Prototyping in XR: Linking Extended Reality to Digital   Fabrication**\n   Authors: Bixun Chen, Shaun Macdonald, Moataz Attallah, Paul Chapman, Rami Ghannam\n   Published: 2025-04-03\n   ArXiv ID: 2504.02998\n   Summary: Extended Reality (XR) has expanded the horizons of entertainment and social life and shows great potential in the manufacturing industry. Prototyping in XR can help designers make initial proposals an...\n\n2. **Automotive innovation landscaping using LLM**\n   Authors: Raju Gorain, Omkar Salunke\n   Published: 2024-09-22\n   ArXiv ID: 2409.14436\n   Summary: The process of landscaping automotive innovation through patent analysis is crucial for Research and Development teams. It aids in comprehending innovation trends, technological advancements, and the ...\n\n3. **A Survey on Testing and Analysis of Quantum Software**\n   Authors: Matteo Paltenghi, Michael Pradel\n   Published: 2024-10-01\n   ArXiv ID: 2410.00650\n   Summary: Quantum computing is getting increasing interest from both academia and industry, and the quantum software landscape has been growing rapidly. The quantum software stack comprises quantum programs, im...\n\n4. **Deepfake Generation and Detection: A Benchmark and Survey**\n   Authors: Gan Pei, Jiangning Zhang, Menghan Hu, Zhenyu Zhang, Chengjie Wang, Yunsheng Wu, Guangtao Zhai, Jian Yang, Chunhua Shen, Dacheng Tao\n   Published: 2024-03-26\n   ArXiv ID: 2403.17881v4\n   Summary: Deepfake is a technology dedicated to creating highly realistic facial images and videos under specific conditions, which has significant application potential in fields such as entertainment, movie p...\n\n5. **LLM Inference Serving: Survey of Recent Advances and Opportunities**\n   Authors: Baolin Li, Yankai Jiang, Vijay Gadepally, Devesh Tiwari\n   Published: 2024-07-17\n   ArXiv ID: 2407.12391\n   Summary: This survey offers a comprehensive overview of recent advancements in Large Language Model (LLM) serving systems, focusing on research since the year 2023. We specifically examine system-level enhance...\n\n",
+      "input": "Research the latest developments in quantum computing and create a comprehensive overview.",
+      "purpose": "Get academic research and papers"
+    }
+  ],
+  "final_verification": {
+    "plan_id": "plan_20251106_225120",
+    "verified_at": "2025-11-06T22:51:20.787012",
+    "overall_approval": true,
+    "issues": [],
+    "suggestions": [],
+    "improvements": [],
+    "score": 100,
+    "verification_method": "rule_based"
+  },
+  "status": "completed",
+  "adversarial_loop_active": true,
+  "final_plan_score": 100,
+  "plan_approved": true,
+  "self_correction_used": false
+}

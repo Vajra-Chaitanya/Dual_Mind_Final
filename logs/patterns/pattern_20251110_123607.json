@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-11-10T12:36:07.192587",
+  "query": "what is quantum computing explain in detail",
+  "query_features": {
+    "length": 7,
+    "has_question": false,
+    "type": "explanation",
+    "keywords": [
+      "ai"
+    ]
+  },
+  "plan": {
+    "pipeline": [
+      {
+        "tool": "wikipedia_search",
+        "purpose": "Obtain concise Wikipedia summary of quantum computing",
+        "input": "Quantum computing"
+      },
+      {
+        "tool": "arxiv_summarizer",
+        "purpose": "Retrieve academic paper summaries on quantum computing",
+        "input": "quantum computing"
+      },
+      {
+        "tool": "qa_engine",
+        "purpose": "Synthesize detailed explanation using gathered information",
+        "input": "Explain quantum computing in detail"
+      }
+    ],
+    "reasoning": "Plan to gather general overview from Wikipedia, academic depth from ArXiv, then synthesize with QA engine.",
+    "tools_used": [
+      "wikipedia_search",
+      "arxiv_summarizer",
+      "qa_engine"
+    ]
+  },
+  "score": 85,
+  "success": true
+}

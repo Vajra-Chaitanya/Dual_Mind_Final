@@ -1,0 +1,158 @@
+{
+  "session_id": "session_20251112_190137",
+  "user_query": "Explain about mole concept in chemistry.",
+  "execution_time": 68.30621242523193,
+  "iterations": 1,
+  "plan": {
+    "query": "Explain about mole concept in chemistry.",
+    "reasoning": "User wants to research a topic, so I'll gather information from multiple sources.",
+    "pipeline": [
+      {
+        "tool": "wikipedia_search",
+        "purpose": "Get foundational knowledge about the topic",
+        "input": "Explain about mole concept in chemistry."
+      },
+      {
+        "tool": "news_fetcher",
+        "purpose": "Find recent developments and news",
+        "input": "Explain about mole concept in chemistry."
+      },
+      {
+        "tool": "arxiv_summarizer",
+        "purpose": "Get academic research and papers",
+        "input": "Explain about mole concept in chemistry."
+      }
+    ],
+    "final_output": "Comprehensive research summary with sources",
+    "created_at": "2025-11-12T19:01:59.192658",
+    "planner_version": "1.0.0-fallback",
+    "available_tools": 11,
+    "estimated_steps": 3,
+    "llm_generated": false
+  },
+  "plan_history": [
+    {
+      "iteration": 0,
+      "plan": {
+        "query": "Explain about mole concept in chemistry.",
+        "reasoning": "User wants to research a topic, so I'll gather information from multiple sources.",
+        "pipeline": [
+          {
+            "tool": "wikipedia_search",
+            "purpose": "Get foundational knowledge about the topic",
+            "input": "Explain about mole concept in chemistry."
+          },
+          {
+            "tool": "news_fetcher",
+            "purpose": "Find recent developments and news",
+            "input": "Explain about mole concept in chemistry."
+          },
+          {
+            "tool": "arxiv_summarizer",
+            "purpose": "Get academic research and papers",
+            "input": "Explain about mole concept in chemistry."
+          }
+        ],
+        "final_output": "Comprehensive research summary with sources",
+        "created_at": "2025-11-12T19:01:59.192658",
+        "planner_version": "1.0.0-fallback",
+        "available_tools": 11,
+        "estimated_steps": 3,
+        "llm_generated": false
+      },
+      "score": 0
+    },
+    {
+      "iteration": 1,
+      "plan": {
+        "query": "Explain about mole concept in chemistry.",
+        "reasoning": "User wants to research a topic, so I'll gather information from multiple sources.",
+        "pipeline": [
+          {
+            "tool": "wikipedia_search",
+            "purpose": "Get foundational knowledge about the topic",
+            "input": "Explain about mole concept in chemistry."
+          },
+          {
+            "tool": "news_fetcher",
+            "purpose": "Find recent developments and news",
+            "input": "Explain about mole concept in chemistry."
+          },
+          {
+            "tool": "arxiv_summarizer",
+            "purpose": "Get academic research and papers",
+            "input": "Explain about mole concept in chemistry."
+          }
+        ],
+        "final_output": "Comprehensive research summary with sources",
+        "created_at": "2025-11-12T19:01:59.192658",
+        "planner_version": "1.0.0-fallback",
+        "available_tools": 11,
+        "estimated_steps": 3,
+        "llm_generated": false
+      },
+      "score": 100,
+      "approved": true
+    }
+  ],
+  "plan_explanation": "\ud83e\udd16 **Planner Analysis & Task Pipeline**\n\n**Query:** Explain about mole concept in chemistry.\n\n**Reasoning:** User wants to research a topic, so I'll gather information from multiple sources.\n\n**\ud83d\udccb Planned Task Pipeline:**\n1. **wikipedia_search**\n   - Purpose: Get foundational knowledge about the topic\n   - Input: Explain about mole concept in chemistry.\n\n2. **news_fetcher**\n   - Purpose: Find recent developments and news\n   - Input: Explain about mole concept in chemistry.\n\n3. **arxiv_summarizer**\n   - Purpose: Get academic research and papers\n   - Input: Explain about mole concept in chemistry.\n\n**\ud83c\udfaf Expected Output:** Comprehensive research summary with sources\n**\ud83d\udcca Plan Metadata:** 3 steps, 11 tools available",
+  "verification": {
+    "plan_id": "plan_20251112_190217",
+    "verified_at": "2025-11-12T19:02:17.931658",
+    "overall_approval": true,
+    "issues": [],
+    "suggestions": [],
+    "improvements": [],
+    "score": 100,
+    "verification_method": "rule_based"
+  },
+  "verifier_feedback": "\ud83d\udd0d **Verifier Feedback & Plan Validation**\n\n\u2705 **Plan Approved** (Score: 100/100)\n\n**\ud83d\udcca Verification Summary:**\n\u2022 Plan ID: plan_20251112_190217\n\u2022 Verified at: 2025-11-12T19:02:17.931658\n\u2022 Tools checked: 11\n\u2022 Rules applied: 5",
+  "execution_results": [
+    {
+      "step": 1,
+      "tool": "wikipedia_search",
+      "status": "success",
+      "execution_time": 6.10037088394165,
+      "output": "## explain mole concept in chemistry\n\n\"explain mole concept in chemistry\" is a topic in computer science and technology. The Wikipedia API is currently unavailable, but this represents knowledge about the subject.\n\n**Source:** [https://en.wikipedia.org/wiki/explain_mole_concept_in_chemistry](https://en.wikipedia.org/wiki/explain_mole_concept_in_chemistry)\n\n*Note: This is a fallback summary as the Wikipedia API could not be accessed.*",
+      "input": "Explain about mole concept in chemistry.",
+      "purpose": "Get foundational knowledge about the topic"
+    },
+    {
+      "step": 2,
+      "tool": "news_fetcher",
+      "status": "success",
+      "execution_time": 2.535743236541748,
+      "output": {
+        "status": "success",
+        "data": [],
+        "message": "No news articles found for keyword: Explain about mole concept in chemistry."
+      },
+      "input": "Explain about mole concept in chemistry.",
+      "purpose": "Find recent developments and news"
+    },
+    {
+      "step": 3,
+      "tool": "arxiv_summarizer",
+      "status": "success",
+      "execution_time": 1.0666046142578125,
+      "output": "No papers found for query: Explain about mole concept in chemistry.",
+      "input": "Explain about mole concept in chemistry.",
+      "purpose": "Get academic research and papers"
+    }
+  ],
+  "final_verification": {
+    "plan_id": "plan_20251112_190245",
+    "verified_at": "2025-11-12T19:02:45.415458",
+    "overall_approval": true,
+    "issues": [],
+    "suggestions": [],
+    "improvements": [],
+    "score": 100,
+    "verification_method": "rule_based"
+  },
+  "status": "completed",
+  "adversarial_loop_active": true,
+  "final_plan_score": 100,
+  "plan_approved": true,
+  "self_correction_used": false
+}

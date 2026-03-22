@@ -1,0 +1,175 @@
+{
+  "session_id": "session_20251110_122500",
+  "user_query": "what is quantum computinh",
+  "execution_time": 38.72618079185486,
+  "iterations": 1,
+  "plan": {
+    "query": "what is quantum computinh",
+    "reasoning": "User wants to research a topic, so I'll gather information from multiple sources.",
+    "pipeline": [
+      {
+        "tool": "wikipedia_search",
+        "purpose": "Get foundational knowledge about the topic",
+        "input": "what is quantum computinh"
+      },
+      {
+        "tool": "news_fetcher",
+        "purpose": "Find recent developments and news",
+        "input": "what is quantum computinh"
+      },
+      {
+        "tool": "arxiv_summarizer",
+        "purpose": "Get academic research and papers",
+        "input": "what is quantum computinh"
+      }
+    ],
+    "final_output": "Comprehensive research summary with sources",
+    "created_at": "2025-11-10T12:25:09.830757",
+    "planner_version": "1.0.0-fallback",
+    "available_tools": 11,
+    "estimated_steps": 3,
+    "llm_generated": false
+  },
+  "plan_history": [
+    {
+      "iteration": 0,
+      "plan": {
+        "query": "what is quantum computinh",
+        "reasoning": "User wants to research a topic, so I'll gather information from multiple sources.",
+        "pipeline": [
+          {
+            "tool": "wikipedia_search",
+            "purpose": "Get foundational knowledge about the topic",
+            "input": "what is quantum computinh"
+          },
+          {
+            "tool": "news_fetcher",
+            "purpose": "Find recent developments and news",
+            "input": "what is quantum computinh"
+          },
+          {
+            "tool": "arxiv_summarizer",
+            "purpose": "Get academic research and papers",
+            "input": "what is quantum computinh"
+          }
+        ],
+        "final_output": "Comprehensive research summary with sources",
+        "created_at": "2025-11-10T12:25:09.830757",
+        "planner_version": "1.0.0-fallback",
+        "available_tools": 11,
+        "estimated_steps": 3,
+        "llm_generated": false
+      },
+      "score": 0
+    },
+    {
+      "iteration": 1,
+      "plan": {
+        "query": "what is quantum computinh",
+        "reasoning": "User wants to research a topic, so I'll gather information from multiple sources.",
+        "pipeline": [
+          {
+            "tool": "wikipedia_search",
+            "purpose": "Get foundational knowledge about the topic",
+            "input": "what is quantum computinh"
+          },
+          {
+            "tool": "news_fetcher",
+            "purpose": "Find recent developments and news",
+            "input": "what is quantum computinh"
+          },
+          {
+            "tool": "arxiv_summarizer",
+            "purpose": "Get academic research and papers",
+            "input": "what is quantum computinh"
+          }
+        ],
+        "final_output": "Comprehensive research summary with sources",
+        "created_at": "2025-11-10T12:25:09.830757",
+        "planner_version": "1.0.0-fallback",
+        "available_tools": 11,
+        "estimated_steps": 3,
+        "llm_generated": false
+      },
+      "score": 100,
+      "approved": true
+    }
+  ],
+  "plan_explanation": "\ud83e\udd16 **Planner Analysis & Task Pipeline**\n\n**Query:** what is quantum computinh\n\n**Reasoning:** User wants to research a topic, so I'll gather information from multiple sources.\n\n**\ud83d\udccb Planned Task Pipeline:**\n1. **wikipedia_search**\n   - Purpose: Get foundational knowledge about the topic\n   - Input: what is quantum computinh\n\n2. **news_fetcher**\n   - Purpose: Find recent developments and news\n   - Input: what is quantum computinh\n\n3. **arxiv_summarizer**\n   - Purpose: Get academic research and papers\n   - Input: what is quantum computinh\n\n**\ud83c\udfaf Expected Output:** Comprehensive research summary with sources\n**\ud83d\udcca Plan Metadata:** 3 steps, 11 tools available",
+  "verification": {
+    "plan_id": "plan_20251110_122519",
+    "verified_at": "2025-11-10T12:25:19.291749",
+    "overall_approval": true,
+    "issues": [],
+    "suggestions": [],
+    "improvements": [],
+    "score": 100,
+    "verification_method": "rule_based"
+  },
+  "verifier_feedback": "\ud83d\udd0d **Verifier Feedback & Plan Validation**\n\n\u2705 **Plan Approved** (Score: 100/100)\n\n**\ud83d\udcca Verification Summary:**\n\u2022 Plan ID: plan_20251110_122519\n\u2022 Verified at: 2025-11-10T12:25:19.291749\n\u2022 Tools checked: 11\n\u2022 Rules applied: 5",
+  "execution_results": [
+    {
+      "step": 1,
+      "tool": "wikipedia_search",
+      "status": "success",
+      "execution_time": 3.9948408603668213,
+      "output": "## what is quantum computinh\n\n\"what is quantum computinh\" is a topic in computer science and technology. The Wikipedia API is currently unavailable, but this represents knowledge about the subject.\n\n**Source:** [https://en.wikipedia.org/wiki/what_is_quantum_computinh](https://en.wikipedia.org/wiki/what_is_quantum_computinh)\n\n*Note: This is a fallback summary as the Wikipedia API could not be accessed.*",
+      "input": "what is quantum computinh",
+      "purpose": "Get foundational knowledge about the topic"
+    },
+    {
+      "step": 2,
+      "tool": "news_fetcher",
+      "status": "success",
+      "execution_time": 2.2758004665374756,
+      "output": {
+        "status": "success",
+        "data": [],
+        "message": "No news articles found for keyword: what is quantum computinh"
+      },
+      "input": "what is quantum computinh",
+      "purpose": "Find recent developments and news"
+    },
+    {
+      "step": 3,
+      "tool": "arxiv_summarizer",
+      "status": "success",
+      "execution_time": 2.556056499481201,
+      "output": "Found 5 papers related to 'what is quantum computinh':\n\n1. **Is nature OO?**\n   Authors: Guy Barrand\n   Published: 2011-07-29\n   ArXiv ID: 1108.0014\n   Summary: What exists \"out there\"? What does \"doing physics\" mean? What are the axiomatic ideas for microphysics? What is a particle? What is an apparatus made of? We show that Quantum Mechanics textbooks canno...\n\n2. **What is Quantum Computation?**\n   Authors: Apoorva Patel\n   Published: 1999-09-27\n   ArXiv ID: quant-ph/9909082\n   Summary: Quantum computation is a rapidly progressing field today. What are its principles? In what sense is it distinct from conventional computation? What are its advantages and disadvantages? What type of p...\n\n3. **Defining what is Quantum: Not all what matters for physical phenomena is   contained in space-time**\n   Authors: Antoine Suarez\n   Published: 2019-05-13\n   ArXiv ID: 1905.06131\n   Summary: It is argued that the three main quantum interpretations, Copenhagen, de Broglie-Bohm, and Many-Worlds, support the Principle Q (Quantum): Not all what matters for physical phenomena is contained in s...\n\n4. **Why Quantum Information Processing**\n   Authors: Hoi-Kwong Lo\n   Published: 2003-09-17\n   ArXiv ID: quant-ph/0309128\n   Summary: In this brief note, I will consider the following questions: (1) What is QIP? (2) Why QIP is interesting? (3) What QIP can do? (4) What QIP cannot do? (5) What are the major challenges in QIP?\n\n5. **An unorthodox view on quantum mechanics**\n   Authors: Gerard 't Hooft\n   Published: 2021-04-07\n   ArXiv ID: 2104.03179\n   Summary: The author's opinion on the interpretation of quantum mechanics is further elucidated. Not only may quantum mechanics be a description of the sub-microscopic world that is profoundly different from wh...\n\n",
+      "input": "what is quantum computinh",
+      "purpose": "Get academic research and papers"
+    }
+  ],
+  "final_verification": {
+    "overall_approval": true,
+    "score": 85,
+    "issues": [
+      "Query contains typo 'computinh' instead of 'computing'",
+      "Wikipedia API unavailable",
+      "News fetcher returned no results",
+      "ArXiv results may be inaccurate due to typo"
+    ],
+    "suggestions": [
+      "Correct the query to 'quantum computing'",
+      "Implement retry or fallback for Wikipedia API",
+      "Add semantic_scholar to broaden academic coverage",
+      "Verify arXiv search results and filter by correct keyword"
+    ],
+    "improvements": [
+      "Add error handling for API failures",
+      "Include additional sources like PubMed if relevant",
+      "Use more precise search terms",
+      "Add step to validate results before proceeding"
+    ],
+    "reasoning": "The plan is generally sound: it uses relevant tools (Wikipedia, news, arXiv) in a logical sequence to gather foundational knowledge, recent developments, and academic research. However, the query typo leads to suboptimal results, and the Wikipedia API failure and empty news results indicate potential robustness issues. The arXiv output shows relevant papers but may be affected by the typo. Overall, the plan meets most criteria with minor issues, earning a score of 85.",
+    "plan_id": "plan_20251110_122539",
+    "verified_at": "2025-11-10T12:25:39.513572",
+    "verification_method": "llm",
+    "tools_available": 11
+  },
+  "status": "completed",
+  "adversarial_loop_active": true,
+  "final_plan_score": 100,
+  "plan_approved": true,
+  "self_correction_used": false
+}

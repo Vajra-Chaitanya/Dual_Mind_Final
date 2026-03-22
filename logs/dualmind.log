@@ -1,0 +1,499 @@
+2025-11-06 22:49:17,693 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-06 22:49:17,693 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-06 22:49:17,946 - orchestrator - WARNING - Tool function not found in pubmed_search: module 'tools.pubmed_search' has no attribute 'pubmed_search_tool'
+2025-11-06 22:49:21,498 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-06 22:49:22,705 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-06 22:49:24,570 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-11-06 22:49:26,667 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-11-06 22:50:06,773 - orchestrator - INFO - Starting new session: session_20251106_225006
+2025-11-06 22:50:06,773 - orchestrator - INFO - Phase 1: Generating initial task plan...
+2025-11-06 22:50:08,352 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:50:08,353 - llm_client - WARNING - Retrying in 2.0 seconds... (attempt 1/4)
+2025-11-06 22:50:11,956 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:50:11,956 - llm_client - WARNING - Retrying in 4.0 seconds... (attempt 2/4)
+2025-11-06 22:50:17,604 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:50:17,605 - llm_client - WARNING - Retrying in 8.0 seconds... (attempt 3/4)
+2025-11-06 22:50:27,265 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:50:27,266 - llm_client - ERROR - Max retries exceeded. Last error: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:50:27,267 - planner - WARNING - LLM plan generation failed (ValueError), using fallback
+2025-11-06 22:50:27,268 - orchestrator - INFO - Phase 2: Entering adversarial verification loop...
+2025-11-06 22:50:27,269 - orchestrator - INFO - 🔄 Adversarial iteration 1/2
+2025-11-06 22:50:28,999 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:50:28,999 - llm_client - WARNING - Retrying in 2.0 seconds... (attempt 1/4)
+2025-11-06 22:50:32,616 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:50:32,617 - llm_client - WARNING - Retrying in 4.0 seconds... (attempt 2/4)
+2025-11-06 22:50:38,053 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:50:38,053 - llm_client - WARNING - Retrying in 8.0 seconds... (attempt 3/4)
+2025-11-06 22:50:47,473 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:50:47,474 - llm_client - ERROR - Max retries exceeded. Last error: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:50:47,474 - verifier - WARNING - LLM verification failed (ValueError), using rule-based
+2025-11-06 22:50:47,474 - orchestrator - INFO - Verification score: 100/100, Approved: True
+2025-11-06 22:50:47,476 - orchestrator - INFO - ✅ Plan approved by verifier (score: 100/100)
+2025-11-06 22:50:47,477 - orchestrator - INFO - Phase 3: Executing approved task pipeline...
+2025-11-06 22:50:47,477 - orchestrator - INFO - Executing step 1: wikipedia_search
+2025-11-06 22:50:56,940 - orchestrator - INFO - Executing step 2: news_fetcher
+2025-11-06 22:50:59,730 - tools.news_fetcher - ERROR - Error fetching news from TheNewsAPI: 401 Client Error: Unauthorized for url: https://api.thenewsapi.com/v1/news/all?api_token=your+api+key&search=Research+the+latest+developments+in+quantum+computing+and+create+a+comprehensive+overview.&limit=5&language=en&search_fields=title%2Cdescription%2Ccontent&sort=relevance&published_after=2025-10-30T22%3A50%3A56
+2025-11-06 22:50:59,740 - orchestrator - INFO - Executing step 3: arxiv_summarizer
+2025-11-06 22:51:02,070 - orchestrator - INFO - Phase 4: Final verification of results...
+2025-11-06 22:51:03,510 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:51:03,510 - llm_client - WARNING - Retrying in 2.0 seconds... (attempt 1/4)
+2025-11-06 22:51:06,797 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:51:06,798 - llm_client - WARNING - Retrying in 4.0 seconds... (attempt 2/4)
+2025-11-06 22:51:11,973 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:51:11,974 - llm_client - WARNING - Retrying in 8.0 seconds... (attempt 3/4)
+2025-11-06 22:51:20,782 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:51:20,782 - llm_client - ERROR - Max retries exceeded. Last error: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:51:20,785 - verifier - WARNING - LLM verification failed (ValueError), using rule-based
+2025-11-06 22:51:20,789 - orchestrator - INFO - Session logged to: logs\session_20251106_225120.json
+2025-11-06 22:51:20,794 - orchestrator - INFO - ✅ Stored successful plan pattern: logs\patterns\pattern_20251106_225120.json
+2025-11-06 22:51:20,794 - ui - ERROR - Error in synthesizer: 'dict' object has no attribute 'startswith'
+2025-11-06 22:51:20,794 - ui - ERROR - Error processing query: 'dict' object has no attribute 'strip'
+2025-11-06 22:53:40,079 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-06 22:53:40,080 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-06 22:53:40,452 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-06 22:53:41,662 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-06 22:53:43,468 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-11-06 22:53:45,529 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-11-06 22:56:40,807 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-06 22:56:40,808 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-06 22:56:40,839 - orchestrator - WARNING - Tool function not found in pubmed_search: module 'tools.pubmed_search' has no attribute 'pubmed_search_tool'
+2025-11-06 22:56:43,849 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-06 22:56:45,119 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-06 22:56:46,781 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-11-06 22:56:48,872 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-11-06 22:57:51,531 - orchestrator - INFO - Starting new session: session_20251106_225751
+2025-11-06 22:57:51,532 - orchestrator - INFO - Phase 1: Generating initial task plan...
+2025-11-06 22:57:51,560 - planner - INFO - 📚 Found similar successful pattern (similarity: 0.73)
+2025-11-06 22:57:51,561 - planner - INFO - Learning from: Research the latest developments in quantum computing and create a comprehensive overview.
+2025-11-06 22:57:55,155 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:57:55,156 - llm_client - WARNING - Retrying in 2.0 seconds... (attempt 1/4)
+2025-11-06 22:57:58,579 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:57:58,580 - llm_client - WARNING - Retrying in 4.0 seconds... (attempt 2/4)
+2025-11-06 22:58:03,979 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:58:03,979 - llm_client - WARNING - Retrying in 8.0 seconds... (attempt 3/4)
+2025-11-06 22:58:13,665 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:58:13,666 - llm_client - ERROR - Max retries exceeded. Last error: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:58:13,666 - planner - WARNING - LLM plan generation failed (ValueError), using fallback
+2025-11-06 22:58:13,668 - orchestrator - INFO - Phase 2: Entering adversarial verification loop...
+2025-11-06 22:58:13,669 - orchestrator - INFO - 🔄 Adversarial iteration 1/2
+2025-11-06 22:58:15,138 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:58:15,138 - llm_client - WARNING - Retrying in 2.0 seconds... (attempt 1/4)
+2025-11-06 22:58:18,578 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:58:18,578 - llm_client - WARNING - Retrying in 4.0 seconds... (attempt 2/4)
+2025-11-06 22:58:24,072 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:58:24,074 - llm_client - WARNING - Retrying in 8.0 seconds... (attempt 3/4)
+2025-11-06 22:58:33,512 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:58:33,514 - llm_client - ERROR - Max retries exceeded. Last error: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:58:33,515 - verifier - WARNING - LLM verification failed (ValueError), using rule-based
+2025-11-06 22:58:33,516 - orchestrator - INFO - Verification score: 100/100, Approved: True
+2025-11-06 22:58:33,516 - orchestrator - INFO - ✅ Plan approved by verifier (score: 100/100)
+2025-11-06 22:58:33,517 - orchestrator - INFO - Phase 3: Executing approved task pipeline...
+2025-11-06 22:58:33,518 - orchestrator - INFO - Executing step 1: wikipedia_search
+2025-11-06 22:58:42,910 - orchestrator - INFO - Executing step 2: news_fetcher
+2025-11-06 22:58:45,364 - tools.news_fetcher - ERROR - Error fetching news from TheNewsAPI: 401 Client Error: Unauthorized for url: https://api.thenewsapi.com/v1/news/all?api_token=your+api+key&search=Create+a+report+on+machine+learning+applications+in+healthcare+with+academic+sources.&limit=5&language=en&search_fields=title%2Cdescription%2Ccontent&sort=relevance&published_after=2025-10-30T22%3A58%3A42
+2025-11-06 22:58:45,370 - orchestrator - INFO - Executing step 3: arxiv_summarizer
+2025-11-06 22:58:47,525 - orchestrator - INFO - Executing step 4: data_plotter
+2025-11-06 22:58:47,594 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-06 22:58:47,598 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-06 22:58:48,258 - orchestrator - INFO - Executing step 5: document_writer
+2025-11-06 22:58:48,264 - orchestrator - INFO - Phase 4: Final verification of results...
+2025-11-06 22:58:48,881 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:58:48,899 - llm_client - WARNING - Retrying in 2.0 seconds... (attempt 1/4)
+2025-11-06 22:58:51,625 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:58:51,626 - llm_client - WARNING - Retrying in 4.0 seconds... (attempt 2/4)
+2025-11-06 22:58:56,268 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:58:56,270 - llm_client - WARNING - Retrying in 8.0 seconds... (attempt 3/4)
+2025-11-06 22:59:04,871 - llm_client - ERROR - Request failed: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:59:04,873 - llm_client - ERROR - Max retries exceeded. Last error: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 22:59:04,876 - verifier - WARNING - LLM verification failed (ValueError), using rule-based
+2025-11-06 22:59:04,878 - orchestrator - INFO - Session logged to: logs\session_20251106_225904.json
+2025-11-06 22:59:04,880 - orchestrator - INFO - ✅ Stored successful plan pattern: logs\patterns\pattern_20251106_225904.json
+2025-11-06 22:59:04,881 - ui - ERROR - Error in synthesizer: 'dict' object has no attribute 'startswith'
+2025-11-06 22:59:04,882 - ui - ERROR - Error processing query: 'dict' object has no attribute 'strip'
+2025-11-06 23:29:08,196 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-06 23:29:08,196 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-06 23:29:08,576 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-06 23:29:09,959 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-06 23:29:13,776 - __main__ - ERROR - Error starting DualMind Orchestrator: Cannot find empty port in range: 7860-7860. You can specify a different port by setting the GRADIO_SERVER_PORT environment variable or passing the `server_port` parameter to `launch()`.
+2025-11-06 23:30:31,415 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-06 23:30:31,415 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-06 23:30:31,653 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-06 23:30:34,175 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-11-06 23:30:34,228 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-06 23:30:36,307 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-11-06 23:30:49,222 - ui - ERROR - Error processing query: 'Orchestrator' object has no attribute 'logger'
+2025-11-06 23:45:13,197 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-06 23:45:13,197 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-06 23:45:13,240 - orchestrator - ERROR - Error loading tools: name '_import_' is not defined
+2025-11-06 23:45:13,468 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-06 23:45:14,716 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-06 23:45:15,944 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-11-06 23:45:18,026 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-11-06 23:47:46,232 - orchestrator - INFO - Starting new session: session_20251106_234746
+2025-11-06 23:47:46,236 - orchestrator - INFO - Phase 1: Generating initial task plan...
+2025-11-06 23:47:46,279 - planner - INFO - 📚 Found similar successful pattern (similarity: 1.00)
+2025-11-06 23:47:46,280 - planner - INFO - Learning from: Create a report on machine learning applications in healthcare with academic sources.
+2025-11-06 23:47:52,212 - llm_client - INFO - LLM API call successful
+2025-11-06 23:47:52,217 - planner - INFO - Successfully parsed and validated LLM plan with 4 steps
+2025-11-06 23:47:52,218 - planner - INFO - Successfully created LLM-based plan
+2025-11-06 23:47:52,218 - orchestrator - INFO - Phase 2: Entering adversarial verification loop...
+2025-11-06 23:47:52,218 - orchestrator - INFO - 🔄 Adversarial iteration 1/2
+2025-11-06 23:47:58,757 - llm_client - INFO - LLM API call successful
+2025-11-06 23:47:58,763 - verifier - WARNING - LLM verification failed (ValueError), using rule-based
+2025-11-06 23:47:58,764 - orchestrator - INFO - Verification score: 100/100, Approved: True
+2025-11-06 23:47:58,765 - orchestrator - INFO - ✅ Plan approved by verifier (score: 100/100)
+2025-11-06 23:47:58,765 - orchestrator - INFO - Phase 3: Executing approved task pipeline...
+2025-11-06 23:47:58,766 - orchestrator - INFO - Executing step 1: wikipedia_search
+2025-11-06 23:47:58,767 - orchestrator - INFO - Executing step 2: semantic_scholar
+2025-11-06 23:47:58,767 - orchestrator - INFO - Executing step 3: arxiv_summarizer
+2025-11-06 23:47:58,768 - orchestrator - INFO - Executing step 4: qa_engine
+2025-11-06 23:47:58,768 - orchestrator - WARNING - ❌ 3 tool(s) failed. Attempting self-correction...
+2025-11-06 23:47:58,769 - orchestrator - INFO - Analyzing failure: semantic_scholar - Tool 'semantic_scholar' not available
+2025-11-06 23:47:58,770 - orchestrator - INFO - Analyzing failure: arxiv_summarizer - Tool 'arxiv_summarizer' not available
+2025-11-06 23:47:58,770 - orchestrator - INFO - Replaced arxiv_summarizer with fallback: wikipedia_search
+2025-11-06 23:47:58,771 - orchestrator - INFO - Analyzing failure: qa_engine - Tool 'qa_engine' not available
+2025-11-06 23:47:58,772 - orchestrator - INFO - ✨ Generated corrected plan, retrying...
+2025-11-06 23:47:58,773 - orchestrator - WARNING - 🔄 Self-correction attempt 1/2
+2025-11-06 23:47:58,774 - orchestrator - INFO - Executing step 1: wikipedia_search
+2025-11-06 23:47:58,774 - orchestrator - INFO - Executing step 2: semantic_scholar
+2025-11-06 23:47:58,775 - orchestrator - INFO - Executing step 3: wikipedia_search
+2025-11-06 23:47:58,776 - orchestrator - INFO - Executing step 4: qa_engine
+2025-11-06 23:47:58,776 - orchestrator - WARNING - ❌ 2 tool(s) failed. Attempting self-correction...
+2025-11-06 23:47:58,777 - orchestrator - INFO - Analyzing failure: semantic_scholar - Tool 'semantic_scholar' not available
+2025-11-06 23:47:58,778 - orchestrator - INFO - Analyzing failure: qa_engine - Tool 'qa_engine' not available
+2025-11-06 23:47:58,778 - orchestrator - INFO - ✨ Generated corrected plan, retrying...
+2025-11-06 23:47:58,779 - orchestrator - WARNING - 🔄 Self-correction attempt 2/2
+2025-11-06 23:47:58,780 - orchestrator - INFO - Executing step 1: wikipedia_search
+2025-11-06 23:47:58,780 - orchestrator - INFO - Executing step 2: semantic_scholar
+2025-11-06 23:47:58,781 - orchestrator - INFO - Executing step 3: wikipedia_search
+2025-11-06 23:47:58,782 - orchestrator - INFO - Executing step 4: qa_engine
+2025-11-06 23:47:58,783 - orchestrator - ERROR - ⚠ Max retries reached. Returning results with 2 failures.
+2025-11-06 23:47:58,784 - orchestrator - INFO - Phase 4: Final verification of results...
+2025-11-06 23:48:13,063 - llm_client - ERROR - Failed to parse response: Empty content in API response
+2025-11-06 23:48:13,064 - llm_client - WARNING - Retrying in 2.0 seconds... (attempt 1/4)
+2025-11-06 23:48:28,554 - llm_client - ERROR - Failed to parse response: Empty content in API response
+2025-11-06 23:48:28,555 - llm_client - WARNING - Retrying in 4.0 seconds... (attempt 2/4)
+2025-11-06 23:48:36,034 - llm_client - ERROR - Request failed: 404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-06 23:48:36,035 - llm_client - WARNING - Retrying in 8.0 seconds... (attempt 3/4)
+2025-11-06 23:48:50,933 - llm_client - INFO - LLM API call successful
+2025-11-06 23:48:50,934 - verifier - INFO - Successfully parsed and validated LLM verification (score: 75)
+2025-11-06 23:48:50,934 - verifier - INFO - Successfully completed LLM-based verification
+2025-11-06 23:48:50,937 - orchestrator - INFO - Session logged to: logs\session_20251106_234850.json
+2025-11-07 00:01:06,715 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-07 00:01:06,716 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-07 00:01:08,454 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-07 00:01:09,733 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-07 00:01:10,921 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-11-07 00:01:13,029 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-11-07 00:01:32,189 - orchestrator - INFO - Starting new session: session_20251107_000132
+2025-11-07 00:01:32,190 - orchestrator - INFO - Phase 1: Generating initial task plan...
+2025-11-07 00:01:32,193 - planner - INFO - 📚 Found similar successful pattern (similarity: 1.00)
+2025-11-07 00:01:32,194 - planner - INFO - Learning from: Research the latest developments in quantum computing and create a comprehensive overview.
+2025-11-07 00:01:37,687 - llm_client - INFO - LLM API call successful
+2025-11-07 00:01:37,697 - planner - INFO - Successfully parsed and validated LLM plan with 4 steps
+2025-11-07 00:01:37,698 - planner - INFO - Successfully created LLM-based plan
+2025-11-07 00:01:37,699 - orchestrator - INFO - Phase 2: Entering adversarial verification loop...
+2025-11-07 00:01:37,699 - orchestrator - INFO - 🔄 Adversarial iteration 1/2
+2025-11-07 00:01:43,837 - llm_client - INFO - LLM API call successful
+2025-11-07 00:01:43,841 - verifier - INFO - Successfully parsed and validated LLM verification (score: 90)
+2025-11-07 00:01:43,842 - verifier - INFO - Successfully completed LLM-based verification
+2025-11-07 00:01:43,843 - orchestrator - INFO - Verification score: 90/100, Approved: True
+2025-11-07 00:01:43,843 - orchestrator - INFO - ✅ Plan approved by verifier (score: 90/100)
+2025-11-07 00:01:43,844 - orchestrator - INFO - Phase 3: Executing approved task pipeline...
+2025-11-07 00:01:43,844 - orchestrator - INFO - Executing step 1: wikipedia_search
+2025-11-07 00:01:45,877 - orchestrator - INFO - Executing step 2: news_fetcher
+2025-11-07 00:01:48,237 - orchestrator - INFO - Executing step 3: arxiv_summarizer
+2025-11-07 00:01:49,147 - orchestrator - INFO - Executing step 4: qa_engine
+2025-11-07 00:02:00,555 - orchestrator - INFO - Phase 4: Final verification of results...
+2025-11-07 00:02:03,623 - llm_client - ERROR - Request failed: 404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-07 00:02:03,624 - llm_client - WARNING - Retrying in 2.0 seconds... (attempt 1/4)
+2025-11-07 00:02:13,519 - llm_client - INFO - LLM API call successful
+2025-11-07 00:02:13,521 - verifier - INFO - Successfully parsed and validated LLM verification (score: 78)
+2025-11-07 00:02:13,522 - verifier - INFO - Successfully completed LLM-based verification
+2025-11-07 00:02:13,526 - orchestrator - INFO - Session logged to: logs\session_20251107_000213.json
+2025-11-07 00:02:13,533 - orchestrator - INFO - ✅ Stored successful plan pattern: logs\patterns\pattern_20251107_000213.json
+2025-11-07 00:02:13,534 - ui - ERROR - Error in synthesizer: 'dict' object has no attribute 'startswith'
+2025-11-07 00:02:13,535 - ui - ERROR - Error processing query: 'dict' object has no attribute 'strip'
+2025-11-07 00:13:33,879 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-07 00:13:33,879 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-07 00:13:35,517 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-07 00:13:36,744 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-07 00:13:40,637 - __main__ - ERROR - Error starting DualMind Orchestrator: Cannot find empty port in range: 7860-7860. You can specify a different port by setting the GRADIO_SERVER_PORT environment variable or passing the `server_port` parameter to `launch()`.
+2025-11-07 00:14:18,367 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-07 00:14:18,367 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-07 00:14:20,044 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-07 00:14:21,314 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-07 00:14:22,507 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-11-07 00:14:24,616 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-11-07 00:14:37,689 - orchestrator - INFO - Starting new session: session_20251107_001437
+2025-11-07 00:14:37,690 - orchestrator - INFO - Phase 1: Generating initial task plan...
+2025-11-07 00:14:37,693 - planner - INFO - 📚 Found similar successful pattern (similarity: 1.00)
+2025-11-07 00:14:37,693 - planner - INFO - Learning from: Research the latest developments in quantum computing and create a comprehensive overview.
+2025-11-07 00:14:43,532 - llm_client - INFO - LLM API call successful
+2025-11-07 00:14:43,540 - planner - INFO - Successfully parsed and validated LLM plan with 4 steps
+2025-11-07 00:14:43,542 - planner - INFO - Successfully created LLM-based plan
+2025-11-07 00:14:43,543 - orchestrator - INFO - Phase 2: Entering adversarial verification loop...
+2025-11-07 00:14:43,543 - orchestrator - INFO - 🔄 Adversarial iteration 1/2
+2025-11-07 00:14:50,912 - llm_client - INFO - LLM API call successful
+2025-11-07 00:14:50,916 - verifier - INFO - Successfully parsed and validated LLM verification (score: 75)
+2025-11-07 00:14:50,917 - verifier - INFO - Successfully completed LLM-based verification
+2025-11-07 00:14:50,918 - orchestrator - INFO - Verification score: 75/100, Approved: True
+2025-11-07 00:14:50,918 - orchestrator - INFO - ✅ Plan approved by verifier (score: 75/100)
+2025-11-07 00:14:50,918 - orchestrator - INFO - Phase 3: Executing approved task pipeline...
+2025-11-07 00:14:50,919 - orchestrator - INFO - Executing step 1: wikipedia_search
+2025-11-07 00:14:52,714 - orchestrator - INFO - Executing step 2: news_fetcher
+2025-11-07 00:14:54,803 - orchestrator - INFO - Executing step 3: arxiv_summarizer
+2025-11-07 00:14:55,797 - orchestrator - INFO - Executing step 4: qa_engine
+2025-11-07 00:15:09,400 - orchestrator - INFO - Phase 4: Final verification of results...
+2025-11-07 00:15:16,070 - llm_client - INFO - LLM API call successful
+2025-11-07 00:15:16,075 - verifier - WARNING - LLM verification failed (ValueError), using rule-based
+2025-11-07 00:15:16,077 - orchestrator - INFO - Session logged to: logs\session_20251107_001516.json
+2025-11-07 00:15:16,081 - orchestrator - INFO - ✅ Stored successful plan pattern: logs\patterns\pattern_20251107_001516.json
+2025-11-07 00:15:16,081 - ui - ERROR - Error in synthesizer: 'dict' object has no attribute 'startswith'
+2025-11-07 00:15:16,082 - ui - ERROR - Error processing query: 'dict' object has no attribute 'strip'
+2025-11-07 00:22:40,703 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-07 00:22:40,703 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-07 00:22:42,370 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-07 00:22:43,599 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-07 00:22:44,844 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-11-07 00:22:46,949 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-11-07 00:22:56,874 - orchestrator - INFO - Starting new session: session_20251107_002256
+2025-11-07 00:22:56,875 - orchestrator - INFO - Phase 1: Generating initial task plan...
+2025-11-07 00:22:56,879 - planner - INFO - 📚 Found similar successful pattern (similarity: 1.00)
+2025-11-07 00:22:56,879 - planner - INFO - Learning from: Research the latest developments in quantum computing and create a comprehensive overview.
+2025-11-07 00:23:04,988 - llm_client - INFO - LLM API call successful
+2025-11-07 00:23:04,995 - planner - INFO - Successfully parsed and validated LLM plan with 4 steps
+2025-11-07 00:23:04,995 - planner - INFO - Successfully created LLM-based plan
+2025-11-07 00:23:04,996 - orchestrator - INFO - Phase 2: Entering adversarial verification loop...
+2025-11-07 00:23:04,997 - orchestrator - INFO - 🔄 Adversarial iteration 1/2
+2025-11-07 00:23:09,750 - llm_client - INFO - LLM API call successful
+2025-11-07 00:23:09,754 - verifier - INFO - Successfully parsed and validated LLM verification (score: 85)
+2025-11-07 00:23:09,755 - verifier - INFO - Successfully completed LLM-based verification
+2025-11-07 00:23:09,756 - orchestrator - INFO - Verification score: 85/100, Approved: True
+2025-11-07 00:23:09,756 - orchestrator - INFO - ✅ Plan approved by verifier (score: 85/100)
+2025-11-07 00:23:09,757 - orchestrator - INFO - Phase 3: Executing approved task pipeline...
+2025-11-07 00:23:09,758 - orchestrator - INFO - Executing step 1: wikipedia_search
+2025-11-07 00:23:11,524 - orchestrator - INFO - Executing step 2: news_fetcher
+2025-11-07 00:23:13,324 - tools.news_fetcher - ERROR - Unexpected error in news fetcher: 'str' object has no attribute 'get'
+2025-11-07 00:23:13,327 - orchestrator - INFO - Executing step 3: arxiv_summarizer
+2025-11-07 00:23:13,914 - orchestrator - INFO - Executing step 4: qa_engine
+2025-11-07 00:23:26,221 - orchestrator - INFO - Phase 4: Final verification of results...
+2025-11-07 00:23:33,660 - llm_client - INFO - LLM API call successful
+2025-11-07 00:23:33,662 - verifier - INFO - Successfully parsed and validated LLM verification (score: 72)
+2025-11-07 00:23:33,664 - verifier - INFO - Successfully completed LLM-based verification
+2025-11-07 00:23:33,667 - orchestrator - INFO - Session logged to: logs\session_20251107_002333.json
+2025-11-07 00:23:33,670 - orchestrator - INFO - ✅ Stored successful plan pattern: logs\patterns\pattern_20251107_002333.json
+2025-11-07 00:23:33,671 - ui - ERROR - Error in synthesizer: 'dict' object has no attribute 'lower'
+2025-11-07 14:41:32,790 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-07 14:41:32,791 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-07 14:41:36,381 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-07 14:41:39,087 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-11-07 14:41:41,174 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-11-07 14:43:51,362 - orchestrator - INFO - Starting new session: session_20251107_144351
+2025-11-07 14:43:51,363 - orchestrator - INFO - Phase 1: Generating initial task plan...
+2025-11-07 14:44:18,309 - llm_client - INFO - LLM API call successful
+2025-11-07 14:44:18,317 - planner - INFO - Successfully parsed and validated LLM plan with 5 steps
+2025-11-07 14:44:18,318 - planner - INFO - Successfully created LLM-based plan
+2025-11-07 14:44:18,318 - orchestrator - INFO - Phase 2: Entering adversarial verification loop...
+2025-11-07 14:44:18,319 - orchestrator - INFO - 🔄 Adversarial iteration 1/2
+2025-11-07 14:44:32,332 - llm_client - INFO - LLM API call successful
+2025-11-07 14:44:32,335 - verifier - INFO - Successfully parsed and validated LLM verification (score: 95)
+2025-11-07 14:44:32,335 - verifier - INFO - Successfully completed LLM-based verification
+2025-11-07 14:44:32,337 - orchestrator - INFO - Verification score: 95/100, Approved: True
+2025-11-07 14:44:32,337 - orchestrator - INFO - ✅ Plan approved by verifier (score: 95/100)
+2025-11-07 14:44:32,338 - orchestrator - INFO - Phase 3: Executing approved task pipeline...
+2025-11-07 14:44:32,339 - orchestrator - INFO - Executing step 1: arxiv_summarizer
+2025-11-07 14:44:34,258 - orchestrator - INFO - Executing step 2: news_fetcher
+2025-11-07 14:44:36,808 - orchestrator - INFO - Executing step 3: data_plotter
+2025-11-07 14:44:36,809 - tools.data_plotter - WARNING - Invalid JSON input, using default data. Input was: Generate a bar chart of AI breakthrough categories in climate research
+2025-11-07 14:44:37,364 - orchestrator - INFO - Executing step 4: qa_engine
+2025-11-07 14:45:07,362 - orchestrator - INFO - Executing step 5: document_writer
+2025-11-07 14:45:07,362 - tools.document_writer - WARNING - Invalid JSON input, using text as content. Input was: Create a PDF titled 'Recent AI Breakthroughs in Climate Research' with text and charts
+2025-11-07 14:45:07,365 - orchestrator - INFO - Phase 4: Final verification of results...
+2025-11-07 14:45:16,503 - llm_client - INFO - LLM API call successful
+2025-11-07 14:45:16,507 - verifier - INFO - Successfully parsed and validated LLM verification (score: 90)
+2025-11-07 14:45:16,508 - verifier - INFO - Successfully completed LLM-based verification
+2025-11-07 14:45:16,513 - orchestrator - INFO - Session logged to: logs\session_20251107_144516.json
+2025-11-07 14:45:16,516 - orchestrator - INFO - ✅ Stored successful plan pattern: logs\patterns\pattern_20251107_144516.json
+2025-11-07 14:45:16,518 - ui - ERROR - Error in synthesizer: 'dict' object has no attribute 'lower'
+2025-11-07 14:48:28,237 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-07 14:48:28,238 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-07 14:48:31,406 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-07 14:48:32,738 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-07 14:48:34,051 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-11-07 14:48:36,174 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-11-07 14:48:57,386 - orchestrator - INFO - Starting new session: session_20251107_144857
+2025-11-07 14:48:57,390 - orchestrator - INFO - Phase 1: Generating initial task plan...
+2025-11-07 14:48:57,400 - planner - INFO - 📚 Found similar successful pattern (similarity: 1.00)
+2025-11-07 14:48:57,402 - planner - INFO - Learning from: Research the latest developments in quantum computing and create a comprehensive overview.
+2025-11-07 14:49:06,909 - llm_client - INFO - LLM API call successful
+2025-11-07 14:49:06,919 - planner - INFO - Successfully parsed and validated LLM plan with 4 steps
+2025-11-07 14:49:06,920 - planner - INFO - Successfully created LLM-based plan
+2025-11-07 14:49:06,921 - orchestrator - INFO - Phase 2: Entering adversarial verification loop...
+2025-11-07 14:49:06,922 - orchestrator - INFO - 🔄 Adversarial iteration 1/2
+2025-11-07 14:49:17,421 - llm_client - INFO - LLM API call successful
+2025-11-07 14:49:17,426 - verifier - INFO - Successfully parsed and validated LLM verification (score: 88)
+2025-11-07 14:49:17,426 - verifier - INFO - Successfully completed LLM-based verification
+2025-11-07 14:49:17,429 - orchestrator - INFO - Verification score: 88/100, Approved: True
+2025-11-07 14:49:17,432 - orchestrator - INFO - ✅ Plan approved by verifier (score: 88/100)
+2025-11-07 14:49:17,448 - orchestrator - INFO - Phase 3: Executing approved task pipeline...
+2025-11-07 14:49:17,450 - orchestrator - INFO - Executing step 1: wikipedia_search
+2025-11-07 14:49:21,314 - orchestrator - INFO - Executing step 2: news_fetcher
+2025-11-07 14:49:24,384 - orchestrator - INFO - Executing step 3: arxiv_summarizer
+2025-11-07 14:49:26,843 - orchestrator - INFO - Executing step 4: qa_engine
+2025-11-07 14:49:53,873 - orchestrator - INFO - Phase 4: Final verification of results...
+2025-11-07 14:49:57,352 - llm_client - ERROR - Request failed: 404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-07 14:49:57,352 - llm_client - WARNING - Retrying in 2.0 seconds... (attempt 1/4)
+2025-11-07 14:50:09,946 - llm_client - INFO - LLM API call successful
+2025-11-07 14:50:09,949 - verifier - INFO - Successfully parsed and validated LLM verification (score: 80)
+2025-11-07 14:50:09,950 - verifier - INFO - Successfully completed LLM-based verification
+2025-11-07 14:50:09,954 - orchestrator - INFO - Session logged to: logs\session_20251107_145009.json
+2025-11-07 14:50:09,956 - orchestrator - INFO - ✅ Stored successful plan pattern: logs\patterns\pattern_20251107_145009.json
+2025-11-07 19:55:05,742 - orchestrator - INFO - Starting new session: session_20251107_195505
+2025-11-07 19:55:05,743 - orchestrator - INFO - Phase 1: Generating initial task plan...
+2025-11-07 19:55:05,748 - planner - INFO - 📚 Found similar successful pattern (similarity: 1.00)
+2025-11-07 19:55:05,749 - planner - INFO - Learning from: Research the latest developments in quantum computing and create a comprehensive overview.
+2025-11-07 19:55:05,755 - llm_client - ERROR - Request failed: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E93C012FB0>: Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-11-07 19:55:05,756 - llm_client - WARNING - Retrying in 2.0 seconds... (attempt 1/4)
+2025-11-07 19:55:07,767 - llm_client - ERROR - Request failed: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E93BF87BB0>: Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-11-07 19:55:07,769 - llm_client - WARNING - Retrying in 4.0 seconds... (attempt 2/4)
+2025-11-07 19:55:11,801 - llm_client - ERROR - Request failed: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E93BFB9390>: Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-11-07 19:55:11,807 - llm_client - WARNING - Retrying in 8.0 seconds... (attempt 3/4)
+2025-11-07 19:55:19,824 - llm_client - ERROR - Request failed: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E93BFBB910>: Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-11-07 19:55:19,825 - llm_client - ERROR - Max retries exceeded. Last error: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E93BFBB910>: Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-11-07 19:55:19,826 - planner - WARNING - LLM plan generation failed (ValueError), using fallback
+2025-11-07 19:55:19,826 - orchestrator - INFO - Phase 2: Entering adversarial verification loop...
+2025-11-07 19:55:19,827 - orchestrator - INFO - 🔄 Adversarial iteration 1/2
+2025-11-07 19:55:20,841 - llm_client - ERROR - Request failed: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E93BFBB6A0>: Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-11-07 19:55:20,842 - llm_client - WARNING - Retrying in 2.0 seconds... (attempt 1/4)
+2025-11-07 19:55:22,848 - llm_client - ERROR - Request failed: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E93BFB88B0>: Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-11-07 19:55:22,849 - llm_client - WARNING - Retrying in 4.0 seconds... (attempt 2/4)
+2025-11-07 19:55:26,856 - llm_client - ERROR - Request failed: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E93BFB84C0>: Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-11-07 19:55:26,857 - llm_client - WARNING - Retrying in 8.0 seconds... (attempt 3/4)
+2025-11-07 19:55:34,867 - llm_client - ERROR - Request failed: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E93BFB8B80>: Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-11-07 19:55:34,867 - llm_client - ERROR - Max retries exceeded. Last error: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E93BFB8B80>: Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-11-07 19:55:34,868 - verifier - WARNING - LLM verification failed (ValueError), using rule-based
+2025-11-07 19:55:34,868 - orchestrator - INFO - Verification score: 100/100, Approved: True
+2025-11-07 19:55:34,870 - orchestrator - INFO - ✅ Plan approved by verifier (score: 100/100)
+2025-11-07 19:55:34,870 - orchestrator - INFO - Phase 3: Executing approved task pipeline...
+2025-11-07 19:55:34,870 - orchestrator - INFO - Executing step 1: wikipedia_search
+2025-11-07 19:55:34,886 - orchestrator - INFO - Executing step 2: news_fetcher
+2025-11-07 19:55:34,891 - tools.news_fetcher - ERROR - Error fetching news from TheNewsAPI: HTTPSConnectionPool(host='api.thenewsapi.com', port=443): Max retries exceeded with url: /v1/news/all?api_token=YLOIuZ5xvPDAqVo84quriyg5c4SSWEt55cI30FgC&search=Research+the+latest+developments+in+quantum+computing+and+create+a+comprehensive+overview.&limit=5&language=en&search_fields=title%2Cdescription%2Ccontent&sort=relevance&published_after=2025-10-31T19%3A55%3A34 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E93BF87A90>: Failed to resolve 'api.thenewsapi.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-07 19:55:34,892 - orchestrator - INFO - Executing step 3: arxiv_summarizer
+2025-11-07 19:55:34,896 - tools.arxiv_summarizer - ERROR - Error fetching papers from ArXiv: HTTPConnectionPool(host='export.arxiv.org', port=80): Max retries exceeded with url: /api/query?search_query=all%3AResearch+the+latest+developments+in+quantum+computing+and+create+a+comprehensive+overview.&sortBy=relevance&sortOrder=descending&max_results=5 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x000001E93BED7A60>: Failed to resolve 'export.arxiv.org' ([Errno 11001] getaddrinfo failed)"))
+2025-11-07 19:55:34,897 - orchestrator - INFO - Phase 4: Final verification of results...
+2025-11-07 19:55:35,883 - llm_client - ERROR - Request failed: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E93BFB9090>: Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-11-07 19:55:35,884 - llm_client - WARNING - Retrying in 2.0 seconds... (attempt 1/4)
+2025-11-07 19:55:37,890 - llm_client - ERROR - Request failed: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E93C0111E0>: Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-11-07 19:55:37,891 - llm_client - WARNING - Retrying in 4.0 seconds... (attempt 2/4)
+2025-11-07 19:55:41,904 - llm_client - ERROR - Request failed: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E93BFB9090>: Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-11-07 19:55:41,905 - llm_client - WARNING - Retrying in 8.0 seconds... (attempt 3/4)
+2025-11-07 19:55:49,919 - llm_client - ERROR - Request failed: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E93BED74C0>: Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-11-07 19:55:49,920 - llm_client - ERROR - Max retries exceeded. Last error: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E93BED74C0>: Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-11-07 19:55:49,920 - verifier - WARNING - LLM verification failed (ValueError), using rule-based
+2025-11-07 19:55:49,925 - orchestrator - INFO - Session logged to: logs\session_20251107_195549.json
+2025-11-07 19:55:49,929 - orchestrator - INFO - ✅ Stored successful plan pattern: logs\patterns\pattern_20251107_195549.json
+2025-11-07 19:58:12,494 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-07 19:58:12,495 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-07 19:58:18,696 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-07 19:58:20,369 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-07 19:58:22,280 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-11-07 19:58:24,342 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-11-07 19:58:28,238 - orchestrator - INFO - Starting new session: session_20251107_195828
+2025-11-07 19:58:28,240 - orchestrator - INFO - Phase 1: Generating initial task plan...
+2025-11-07 19:58:38,795 - llm_client - INFO - LLM API call successful
+2025-11-07 19:58:38,805 - planner - INFO - Successfully parsed and validated LLM plan with 4 steps
+2025-11-07 19:58:38,806 - planner - INFO - Successfully created LLM-based plan
+2025-11-07 19:58:38,807 - orchestrator - INFO - Phase 2: Entering adversarial verification loop...
+2025-11-07 19:58:38,808 - orchestrator - INFO - 🔄 Adversarial iteration 1/2
+2025-11-07 19:58:49,956 - llm_client - INFO - LLM API call successful
+2025-11-07 19:58:49,960 - verifier - INFO - Successfully parsed and validated LLM verification (score: 85)
+2025-11-07 19:58:49,960 - verifier - INFO - Successfully completed LLM-based verification
+2025-11-07 19:58:49,961 - orchestrator - INFO - Verification score: 85/100, Approved: True
+2025-11-07 19:58:49,962 - orchestrator - INFO - ✅ Plan approved by verifier (score: 85/100)
+2025-11-07 19:58:49,963 - orchestrator - INFO - Phase 3: Executing approved task pipeline...
+2025-11-07 19:58:49,964 - orchestrator - INFO - Executing step 1: news_fetcher
+2025-11-07 19:58:52,630 - orchestrator - INFO - Executing step 2: sentiment_analyzer
+2025-11-07 19:58:53,887 - root - WARNING - Could not load sentiment analysis model: name 'torch' is not defined. Using fallback method.
+2025-11-07 19:58:53,888 - orchestrator - INFO - Executing step 3: data_plotter
+2025-11-07 19:58:53,889 - tools.data_plotter - WARNING - Invalid JSON input, using default data. Input was: {{sentiment_analyzer_output}}
+2025-11-07 19:58:54,352 - orchestrator - INFO - Executing step 4: qa_engine
+2025-11-07 19:59:13,931 - orchestrator - INFO - Phase 4: Final verification of results...
+2025-11-07 19:59:23,267 - llm_client - INFO - LLM API call successful
+2025-11-07 19:59:23,272 - verifier - INFO - Successfully parsed and validated LLM verification (score: 70)
+2025-11-07 19:59:23,273 - verifier - INFO - Successfully completed LLM-based verification
+2025-11-07 19:59:23,276 - orchestrator - INFO - Session logged to: logs\session_20251107_195923.json
+2025-11-07 19:59:23,279 - orchestrator - INFO - ✅ Stored successful plan pattern: logs\patterns\pattern_20251107_195923.json
+2025-11-07 21:29:59,187 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-07 21:29:59,187 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-07 21:30:02,707 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-07 21:30:04,149 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-07 21:30:05,472 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-11-07 21:30:07,578 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-11-07 22:41:16,110 - orchestrator - INFO - Starting new session: session_20251107_224116
+2025-11-07 22:41:16,114 - orchestrator - INFO - Phase 1: Generating initial task plan...
+2025-11-07 22:41:16,143 - planner - INFO - 📚 Found similar successful pattern (similarity: 1.00)
+2025-11-07 22:41:16,144 - planner - INFO - Learning from: Create a report on machine learning applications in healthcare with academic sources.
+2025-11-07 22:41:22,386 - llm_client - ERROR - Request failed: 404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions
+2025-11-07 22:41:22,390 - llm_client - WARNING - Retrying in 2.0 seconds... (attempt 1/4)
+2025-11-07 22:41:29,754 - llm_client - INFO - LLM API call successful
+2025-11-07 22:41:29,757 - planner - INFO - Successfully parsed and validated LLM plan with 3 steps
+2025-11-07 22:41:29,758 - planner - INFO - Successfully created LLM-based plan
+2025-11-07 22:41:29,760 - orchestrator - INFO - Phase 2: Entering adversarial verification loop...
+2025-11-07 22:41:29,760 - orchestrator - INFO - 🔄 Adversarial iteration 1/2
+2025-11-07 22:41:35,673 - llm_client - INFO - LLM API call successful
+2025-11-07 22:41:35,676 - verifier - WARNING - LLM verification failed (ValueError), using rule-based
+2025-11-07 22:41:35,677 - orchestrator - INFO - Verification score: 100/100, Approved: True
+2025-11-07 22:41:35,677 - orchestrator - INFO - ✅ Plan approved by verifier (score: 100/100)
+2025-11-07 22:41:35,678 - orchestrator - INFO - Phase 3: Executing approved task pipeline...
+2025-11-07 22:41:35,679 - orchestrator - INFO - Executing step 1: wikipedia_search
+2025-11-07 22:41:40,769 - orchestrator - INFO - Executing step 2: arxiv_summarizer
+2025-11-07 22:41:42,153 - orchestrator - INFO - Executing step 3: qa_engine
+2025-11-07 22:42:02,720 - orchestrator - INFO - Phase 4: Final verification of results...
+2025-11-07 22:42:08,553 - llm_client - INFO - LLM API call successful
+2025-11-07 22:42:08,558 - verifier - INFO - Successfully parsed and validated LLM verification (score: 85)
+2025-11-07 22:42:08,558 - verifier - INFO - Successfully completed LLM-based verification
+2025-11-07 22:42:08,562 - orchestrator - INFO - Session logged to: logs\session_20251107_224208.json
+2025-11-07 22:42:08,566 - orchestrator - INFO - ✅ Stored successful plan pattern: logs\patterns\pattern_20251107_224208.json
+2025-11-07 22:48:50,414 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-07 22:48:50,414 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-07 22:48:53,740 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-07 22:48:55,100 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-07 22:48:56,450 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-11-07 22:48:58,540 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-11-07 22:58:43,794 - orchestrator - INFO - Starting new session: session_20251107_225843
+2025-11-07 22:58:43,796 - orchestrator - INFO - Phase 1: Generating initial task plan...
+2025-11-07 22:58:43,811 - planner - INFO - 📚 Found similar successful pattern (similarity: 1.00)
+2025-11-07 22:58:43,813 - planner - INFO - Learning from: Create a report on machine learning applications in healthcare with academic sources.
+2025-11-07 22:58:54,524 - llm_client - INFO - LLM API call successful
+2025-11-07 22:58:54,531 - planner - INFO - Successfully parsed and validated LLM plan with 3 steps
+2025-11-07 22:58:54,531 - planner - INFO - Successfully created LLM-based plan
+2025-11-07 22:58:54,531 - orchestrator - INFO - Phase 2: Entering adversarial verification loop...
+2025-11-07 22:58:54,532 - orchestrator - INFO - 🔄 Adversarial iteration 1/2
+2025-11-07 22:59:00,778 - llm_client - INFO - LLM API call successful
+2025-11-07 22:59:00,781 - verifier - INFO - Successfully parsed and validated LLM verification (score: 90)
+2025-11-07 22:59:00,783 - verifier - INFO - Successfully completed LLM-based verification
+2025-11-07 22:59:00,783 - orchestrator - INFO - Verification score: 90/100, Approved: True
+2025-11-07 22:59:00,784 - orchestrator - INFO - ✅ Plan approved by verifier (score: 90/100)
+2025-11-07 22:59:00,784 - orchestrator - INFO - Phase 3: Executing approved task pipeline...
+2025-11-07 22:59:00,784 - orchestrator - INFO - Executing step 1: wikipedia_search
+2025-11-07 22:59:03,359 - orchestrator - INFO - Executing step 2: arxiv_summarizer
+2025-11-07 22:59:04,331 - orchestrator - INFO - Executing step 3: qa_engine
+2025-11-07 22:59:18,693 - orchestrator - INFO - Phase 4: Final verification of results...
+2025-11-07 22:59:26,844 - llm_client - INFO - LLM API call successful
+2025-11-07 22:59:26,850 - verifier - INFO - Successfully parsed and validated LLM verification (score: 90)
+2025-11-07 22:59:26,850 - verifier - INFO - Successfully completed LLM-based verification
+2025-11-07 22:59:26,853 - orchestrator - INFO - Session logged to: logs\session_20251107_225926.json
+2025-11-07 22:59:26,854 - orchestrator - INFO - ✅ Stored successful plan pattern: logs\patterns\pattern_20251107_225926.json
+2025-11-10 11:55:32,490 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-10 11:55:32,491 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-10 11:55:36,130 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-10 11:55:37,986 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-10 11:55:39,087 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-11-10 11:55:41,204 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-11-10 12:14:12,668 - __main__ - INFO - Logging initialized with UTF-8 encoding
+2025-11-10 12:14:12,668 - __main__ - INFO - Starting DualMind Orchestrator...
+2025-11-10 12:14:15,657 - __main__ - INFO - Launching Gradio server on 0.0.0.0:7860
+2025-11-10 12:14:18,449 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-11-10 12:14:18,450 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-11-10 12:14:20,562 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"

@@ -1,0 +1,184 @@
+{
+  "session_id": "session_20251107_195505",
+  "user_query": "Research the latest developments in quantum computing and create a comprehensive overview.",
+  "execution_time": 44.17929148674011,
+  "iterations": 1,
+  "plan": {
+    "query": "Research the latest developments in quantum computing and create a comprehensive overview.",
+    "reasoning": "User wants to research a topic, so I'll gather information from multiple sources.",
+    "pipeline": [
+      {
+        "tool": "wikipedia_search",
+        "purpose": "Get foundational knowledge about the topic",
+        "input": "Research the latest developments in quantum computing and create a comprehensive overview."
+      },
+      {
+        "tool": "news_fetcher",
+        "purpose": "Find recent developments and news",
+        "input": "Research the latest developments in quantum computing and create a comprehensive overview."
+      },
+      {
+        "tool": "arxiv_summarizer",
+        "purpose": "Get academic research and papers",
+        "input": "Research the latest developments in quantum computing and create a comprehensive overview."
+      }
+    ],
+    "final_output": "Comprehensive research summary with sources",
+    "created_at": "2025-11-07T19:55:19.826609",
+    "planner_version": "1.0.0-fallback",
+    "available_tools": 11,
+    "estimated_steps": 3,
+    "llm_generated": false
+  },
+  "plan_history": [
+    {
+      "iteration": 0,
+      "plan": {
+        "query": "Research the latest developments in quantum computing and create a comprehensive overview.",
+        "reasoning": "User wants to research a topic, so I'll gather information from multiple sources.",
+        "pipeline": [
+          {
+            "tool": "wikipedia_search",
+            "purpose": "Get foundational knowledge about the topic",
+            "input": "Research the latest developments in quantum computing and create a comprehensive overview."
+          },
+          {
+            "tool": "news_fetcher",
+            "purpose": "Find recent developments and news",
+            "input": "Research the latest developments in quantum computing and create a comprehensive overview."
+          },
+          {
+            "tool": "arxiv_summarizer",
+            "purpose": "Get academic research and papers",
+            "input": "Research the latest developments in quantum computing and create a comprehensive overview."
+          }
+        ],
+        "final_output": "Comprehensive research summary with sources",
+        "created_at": "2025-11-07T19:55:19.826609",
+        "planner_version": "1.0.0-fallback",
+        "available_tools": 11,
+        "estimated_steps": 3,
+        "llm_generated": false
+      },
+      "score": 0
+    },
+    {
+      "iteration": 1,
+      "plan": {
+        "query": "Research the latest developments in quantum computing and create a comprehensive overview.",
+        "reasoning": "User wants to research a topic, so I'll gather information from multiple sources.",
+        "pipeline": [
+          {
+            "tool": "wikipedia_search",
+            "purpose": "Get foundational knowledge about the topic",
+            "input": "Research the latest developments in quantum computing and create a comprehensive overview."
+          },
+          {
+            "tool": "news_fetcher",
+            "purpose": "Find recent developments and news",
+            "input": "Research the latest developments in quantum computing and create a comprehensive overview."
+          },
+          {
+            "tool": "arxiv_summarizer",
+            "purpose": "Get academic research and papers",
+            "input": "Research the latest developments in quantum computing and create a comprehensive overview."
+          }
+        ],
+        "final_output": "Comprehensive research summary with sources",
+        "created_at": "2025-11-07T19:55:19.826609",
+        "planner_version": "1.0.0-fallback",
+        "available_tools": 11,
+        "estimated_steps": 3,
+        "llm_generated": false
+      },
+      "score": 100,
+      "approved": true
+    }
+  ],
+  "plan_explanation": "\ud83e\udd16 **Planner Analysis & Task Pipeline**\n\n**Query:** Research the latest developments in quantum computing and create a comprehensive overview.\n\n**Reasoning:** User wants to research a topic, so I'll gather information from multiple sources.\n\n**\ud83d\udccb Planned Task Pipeline:**\n1. **wikipedia_search**\n   - Purpose: Get foundational knowledge about the topic\n   - Input: Research the latest developments in quantum computing and create a comprehensive overview.\n\n2. **news_fetcher**\n   - Purpose: Find recent developments and news\n   - Input: Research the latest developments in quantum computing and create a comprehensive overview.\n\n3. **arxiv_summarizer**\n   - Purpose: Get academic research and papers\n   - Input: Research the latest developments in quantum computing and create a comprehensive overview.\n\n**\ud83c\udfaf Expected Output:** Comprehensive research summary with sources\n**\ud83d\udcca Plan Metadata:** 3 steps, 11 tools available",
+  "verification": {
+    "plan_id": "plan_20251107_195534",
+    "verified_at": "2025-11-07T19:55:34.868939",
+    "overall_approval": true,
+    "issues": [],
+    "suggestions": [],
+    "improvements": [],
+    "score": 100,
+    "verification_method": "rule_based"
+  },
+  "verifier_feedback": "\ud83d\udd0d **Verifier Feedback & Plan Validation**\n\n\u2705 **Plan Approved** (Score: 100/100)\n\n**\ud83d\udcca Verification Summary:**\n\u2022 Plan ID: plan_20251107_195534\n\u2022 Verified at: 2025-11-07T19:55:34.868939\n\u2022 Tools checked: 11\n\u2022 Rules applied: 5",
+  "execution_results": [
+    {
+      "step": 1,
+      "tool": "wikipedia_search",
+      "status": "success",
+      "execution_time": 0.014556646347045898,
+      "output": "## developments in quantum computing a overview\n\n\"developments in quantum computing a overview\" is a topic in computer science and technology. The Wikipedia API is currently unavailable, but this represents knowledge about the subject.\n\n**Source:** [https://en.wikipedia.org/wiki/developments_in_quantum_computing_a_overview](https://en.wikipedia.org/wiki/developments_in_quantum_computing_a_overview)\n\n*Note: This is a fallback summary as the Wikipedia API could not be accessed.*",
+      "input": "Research the latest developments in quantum computing and create a comprehensive overview.",
+      "purpose": "Get foundational knowledge about the topic"
+    },
+    {
+      "step": 2,
+      "tool": "news_fetcher",
+      "status": "success",
+      "execution_time": 0.006069183349609375,
+      "output": {
+        "status": "success",
+        "data": [
+          {
+            "title": "AI Breakthrough in Climate Research Announced",
+            "source": "TechCrunch",
+            "published_at": "2025-11-07T19:55:34.886226",
+            "description": "Scientists develop new machine learning model to predict climate patterns with unprecedented accuracy.",
+            "url": "https://example.com/ai-climate-news",
+            "content": "Scientists develop new machine learning model to predict climate patterns with unprecedented accuracy."
+          },
+          {
+            "title": "Breakthrough in Quantum Computing Research",
+            "source": "Nature",
+            "published_at": "2025-11-07T19:55:34.886226",
+            "description": "Researchers achieve quantum supremacy milestone with new experimental processor.",
+            "url": "https://example.com/quantum-news",
+            "content": "Researchers achieve quantum supremacy milestone with new experimental processor."
+          },
+          {
+            "title": "Machine Learning Transforms Healthcare Industry",
+            "source": "MIT Technology Review",
+            "published_at": "2025-11-07T19:55:34.886226",
+            "description": "AI-powered diagnostic tools show 95% accuracy in early disease detection.",
+            "url": "https://example.com/ml-healthcare-news",
+            "content": "AI-powered diagnostic tools show 95% accuracy in early disease detection."
+          }
+        ],
+        "count": 3,
+        "query": "Research the latest developments in quantum computing and create a comprehensive overview."
+      },
+      "input": "Research the latest developments in quantum computing and create a comprehensive overview.",
+      "purpose": "Find recent developments and news"
+    },
+    {
+      "step": 3,
+      "tool": "arxiv_summarizer",
+      "status": "success",
+      "execution_time": 0.004003286361694336,
+      "output": "No papers found for query: Research the latest developments in quantum computing and create a comprehensive overview.",
+      "input": "Research the latest developments in quantum computing and create a comprehensive overview.",
+      "purpose": "Get academic research and papers"
+    }
+  ],
+  "final_verification": {
+    "plan_id": "plan_20251107_195549",
+    "verified_at": "2025-11-07T19:55:49.921619",
+    "overall_approval": true,
+    "issues": [],
+    "suggestions": [],
+    "improvements": [],
+    "score": 100,
+    "verification_method": "rule_based"
+  },
+  "status": "completed",
+  "adversarial_loop_active": true,
+  "final_plan_score": 100,
+  "plan_approved": true,
+  "self_correction_used": false
+}

@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-07T14:50:09.954614",
+  "query": "Research the latest developments in quantum computing and create a comprehensive overview.",
+  "query_features": {
+    "length": 12,
+    "has_question": false,
+    "type": "how-to",
+    "keywords": [
+      "science",
+      "news"
+    ]
+  },
+  "plan": {
+    "pipeline": [
+      {
+        "tool": "wikipedia_search",
+        "purpose": "Provide general background on quantum computing",
+        "input": "quantum computing"
+      },
+      {
+        "tool": "news_fetcher",
+        "purpose": "Retrieve recent news articles on quantum computing",
+        "input": "quantum computing latest developments"
+      },
+      {
+        "tool": "arxiv_summarizer",
+        "purpose": "Summarize recent academic papers on quantum computing",
+        "input": "quantum computing"
+      },
+      {
+        "tool": "qa_engine",
+        "purpose": "Synthesize information into comprehensive overview",
+        "input": "combined results from previous tools"
+      }
+    ],
+    "reasoning": "To provide a comprehensive overview, gather general background from Wikipedia, recent news via NewsAPI, and summaries of recent academic papers from arXiv. Then synthesize all information using the qa_engine.",
+    "tools_used": [
+      "wikipedia_search",
+      "news_fetcher",
+      "arxiv_summarizer",
+      "qa_engine"
+    ]
+  },
+  "score": 88,
+  "success": true
+}
