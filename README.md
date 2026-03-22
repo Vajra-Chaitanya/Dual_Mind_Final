@@ -58,18 +58,36 @@ DualMind Orchestrator implements a novel approach to AI task execution using a *
 
 ## 🚀 Quick Start
 
-### 1. Installation
+### Installation
 
-```bash
-# Clone or download the project
-cd dualmind_orchestrator
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd DualMind
+   ```
 
-# Install dependencies
-pip install -r requirements.txt
+2. **Set up Python environment**
+   ```bash
+   # Create and activate conda environment
+   conda create -n dualmind python=3.9
+   conda activate dualmind
+   
+   # Install Python dependencies
+   pip install -r requirements.txt
+   ```
 
-# Optional: Install PyTorch for better transformer performance
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
-```
+3. **Set up frontend**
+   ```bash
+   cd frontend
+   npm install
+   cd ..
+   ```
+
+4. **Environment Variables**
+   Create a `.env` file in the project root with your API keys (if needed):
+   ```
+   OPENAI_API_KEY=your_api_key_here
+   ```
 
 ### 2. Configuration
 
