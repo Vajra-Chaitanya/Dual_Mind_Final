@@ -176,6 +176,7 @@ The system includes intelligent fallbacks for when APIs are unavailable:
 ```
 dualmind_orchestrator/
 ├── main.py                 # Entry point
+├── fronetend/              #frontend
 ├── planner.py             # Planner LLM (Generator)
 ├── verifier.py            # Verifier LLM (Discriminator)
 ├── orchestrator.py        # Coordination logic
